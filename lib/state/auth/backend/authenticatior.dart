@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -5,12 +6,16 @@ import 'package:instragram_clone/state/auth/constant/constants.dart';
 import 'package:instragram_clone/state/auth/models/auth_results.dart';
 import 'package:instragram_clone/state/auth/post/typdef/user_id.dart';
 
+import '../../user_info/models/user_info_payload.dart';
+
 class Authenticator {
   UserId? get userId => FirebaseAuth.instance.currentUser?.uid;
   bool get isAlreadyLoggedIn => userId != null;
   String get displayName =>
       FirebaseAuth.instance.currentUser?.displayName ?? '';
   String? get email => FirebaseAuth.instance.currentUser?.email;
+
+  FirebaseFirestore firestore = FirebaseFirestore.instance;
 
   Future<void> logOut() async {
     await FirebaseAuth.instance.signOut();
@@ -67,6 +72,7 @@ class Authenticator {
     );
     try {
       await FirebaseAuth.instance.signInWithCredential(authCredential);
+
       return AuthResult.success;
     } catch (e) {
       return AuthResult.failure;

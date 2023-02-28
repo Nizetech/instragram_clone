@@ -1,121 +1,34 @@
 {
   "project_info": {
-    "project_number": "238382646530",
-    "firebase_url": "https://chatting-ce3ff-default-rtdb.firebaseio.com",
-    "project_id": "chatting-ce3ff",
-    "storage_bucket": "chatting-ce3ff.appspot.com"
+    "project_number": "723065524662",
+    "firebase_url": "https://instagram-clone-nizetech-default-rtdb.firebaseio.com",
+    "project_id": "instagram-clone-nizetech",
+    "storage_bucket": "instagram-clone-nizetech.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:238382646530:android:6b5cd156609c6a86dfae1b",
-        "android_client_info": {
-          "package_name": "com.example.chatting"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "238382646530-k445nidbmovugckdhsjmih82mbl3h97i.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC-7aBOE_mBHimhHCeSKnY1ozNIPOMBiRk"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "238382646530-k445nidbmovugckdhsjmih82mbl3h97i.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:238382646530:android:54a8de2153de0948dfae1b",
+        "mobilesdk_app_id": "1:723065524662:android:2fb2df1687e6317311b117",
         "android_client_info": {
           "package_name": "com.example.instragram_clone"
         }
       },
       "oauth_client": [
         {
-          "client_id": "238382646530-k445nidbmovugckdhsjmih82mbl3h97i.apps.googleusercontent.com",
+          "client_id": "723065524662-4jlcs5o229bppgn3e90kvnbqlbhbgo0l.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC-7aBOE_mBHimhHCeSKnY1ozNIPOMBiRk"
+          "current_key": "AIzaSyBREB8bAXHjE8vJ33jk8uYGWoYqC-CzJqs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "238382646530-k445nidbmovugckdhsjmih82mbl3h97i.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:238382646530:android:2f357029f5b1c368dfae1b",
-        "android_client_info": {
-          "package_name": "com.nizetech.chatting"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "238382646530-k445nidbmovugckdhsjmih82mbl3h97i.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC-7aBOE_mBHimhHCeSKnY1ozNIPOMBiRk"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "238382646530-k445nidbmovugckdhsjmih82mbl3h97i.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:238382646530:android:7a70aa5377cd50bcdfae1b",
-        "android_client_info": {
-          "package_name": "com.nizetech.com"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "238382646530-k445nidbmovugckdhsjmih82mbl3h97i.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC-7aBOE_mBHimhHCeSKnY1ozNIPOMBiRk"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "238382646530-k445nidbmovugckdhsjmih82mbl3h97i.apps.googleusercontent.com",
+              "client_id": "723065524662-4jlcs5o229bppgn3e90kvnbqlbhbgo0l.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -6,3 +6,4 @@ class Constants {
   // private constant class
   const Constants._();
 }
+
