@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:instragram_clone/screens/components/loading/loading_screen_controller.dart';
 
-import '../constants.dart';
+import '../constants/constants.dart';
 
 class LoadingScreen {
   LoadingScreen._sharedInstance();

@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:instragram_clone/screens/components/loading/loading_screen.dart';
 import 'package:instragram_clone/screens/login.dart';
+import 'package:instragram_clone/screens/login/login_view.dart';
 import 'package:instragram_clone/state/auth/models/auth_results.dart';
 import 'package:instragram_clone/state/auth/providers/auth_state_providers.dart';
+import 'package:instragram_clone/state/auth/providers/is_loggedf_in_providers.dart';
+import 'package:instragram_clone/state/providers/isloading_provider.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -31,18 +35,29 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Instagram_clone',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      // theme: ThemeData(
+      //   primarySwatch: Colors.blue,
+      // ),
+      theme: ThemeData.dark(),
+      darkTheme: ThemeData.dark(),
+      themeMode: ThemeMode.dark,
       home: Consumer(
         builder: ((context, ref, child) {
-          final isLoggedIn =
-              ref.watch(authStateProvider).result == AuthResult.success;
+          //takes care of loading Screen
+          ref.listen<bool>(isLoadingProvider, (_, isLoading) {
+            if (isLoading) {
+              LoadingScreen.instance().show(context: context);
+            } else {
+              LoadingScreen.instance().hide();
+            }
+          });
+
+          final isLoggedIn = ref.watch(isLoggedInProviders);
           print(isLoggedIn);
           if (isLoggedIn) {
             return const MainView();
           } else {
-            return const Login();
+            return const LoginView();
           }
         }),
       ),
