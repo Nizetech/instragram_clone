@@ -4,6 +4,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:instragram_clone/screens/components/loading/loading_screen.dart';
 import 'package:instragram_clone/screens/login.dart';
 import 'package:instragram_clone/screens/login/login_view.dart';
+import 'package:instragram_clone/screens/main_view.dart';
 import 'package:instragram_clone/state/auth/models/auth_results.dart';
 import 'package:instragram_clone/state/auth/providers/auth_state_providers.dart';
 import 'package:instragram_clone/state/auth/providers/is_loggedf_in_providers.dart';

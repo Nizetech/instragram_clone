@@ -4,7 +4,7 @@ import 'package:flutter/foundation.dart';
 class Strings {
   static const appName = 'Instant-gram!';
   static const allowLikesTitle = 'Allow likes';
-  static const allowDescription =
+  static const allowLikeDescription =
       'By allowing like, users will be able to press the like button on your posts';
   static const allowLikeStorageKey = 'allow_Like';
   static const allowCommentsTitle = 'Allow comments';
@@ -36,6 +36,8 @@ class Strings {
   static const likedThis = 'liked this';
   static const delete = 'Delete';
   static const logOut = 'Log out';
+  static const areYouSureYouWantToLogOutOfThisApp =
+      ' Are you sure you want to log out of this app?';
   static const areYouSureYouWantToDeleteThis =
       'Are you sure you want to delete this?';
   static const cancel = 'Cancel';
@@ -52,5 +54,6 @@ class Strings {
   static const dontHaveAnAccount = "Don't have an account?\n";
   static const signUpOn = 'Sign up on ';
   static const orCreateAnAccountOn = ' or create an account on ';
+
   const Strings._();
 }
